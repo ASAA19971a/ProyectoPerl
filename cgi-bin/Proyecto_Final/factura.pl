@@ -226,11 +226,24 @@ print ' <tr>
                     <p>$'.$subtotal.'</p>
                     <p>$'.$iva.'</p>
                     <p>$'.$pagar.' </p>
+                    <p>
+                    
+                    </p>
                 </td>
 
             </tr>
+            <tr>
+            <td colspan="3">
+            </td>
+            <td colspan="2">
+            <img src="../../Proyecto_Perl/img/mastercad.png" alt="" width="75px">  
+                    <img src="../../Proyecto_Perl/img/visa.png" alt="" width="75px">  
+                    <img src="../../Proyecto_Perl/img/paypal.png" alt="" width="75px">  
+            </td>
+            </tr>
             
         </table>
+        <img src="../../Proyecto_Perl/img/compra.png" alt=""><span class="h1"> Gracias por su compra!<span>
     </div>';
 
 
