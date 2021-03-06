@@ -32,7 +32,7 @@
     </nav>
 
     <!-- FIN NAVEGACION -->
- 
+
     <form action="../cgi-bin/Proyecto_Final/factura.pl" method="POST">
         <div class="container">
             <h2 class="text-center">Compra</h2>
@@ -41,238 +41,238 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-8 p-4 bg-light">
 
-                        <h3 class="text-center h3y-2">Datos factura</h3>
-                        <div class="form-group row">
-                            <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="nombre"
-                                    required onkeypress="return soloLetras(event)"
-                                    oninvalid="setCustomValidity('Ingrese nombre ')" oninput="setCustomValidity('')">
-                            </div>
+                    <h3 class="text-center h3y-2">Datos factura</h3>
+                    <div class="form-group row">
+                        <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="nombre"
+                                required onkeypress="return soloLetras(event)"
+                                oninvalid="setCustomValidity('Ingrese nombre ')" oninput="setCustomValidity('')">
                         </div>
-                        <div class="form-group row">
-                            <label for="apellido" class="col-sm-2 col-form-label">Apellido</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" name="apellido" id="apellido"
-                                    placeholder="apellido" required onkeypress="return soloLetras(event)"
-                                    oninvalid="setCustomValidity('Ingrese apellido ')" oninput="setCustomValidity('')">
-                            </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="apellido" class="col-sm-2 col-form-label">Apellido</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="apellido" id="apellido" placeholder="apellido"
+                                required onkeypress="return soloLetras(event)"
+                                oninvalid="setCustomValidity('Ingrese apellido ')" oninput="setCustomValidity('')">
                         </div>
-                        <div class="form-group row">
-                            <label for="correo" class="col-sm-2 col-form-label">Correo</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" name="correo" id="correo" placeholder="correo"
-                                    required oninvalid="setCustomValidity('Ingrese Correo electrónico válido')"
-                                    oninput="setCustomValidity('')">
-                            </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="correo" class="col-sm-2 col-form-label">Correo</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" name="correo" id="correo" placeholder="correo"
+                                required oninvalid="setCustomValidity('Ingrese Correo electrónico válido')"
+                                oninput="setCustomValidity('')">
                         </div>
-                        <div class="form-group row">
-                            <label for="direccion" class="col-sm-2 col-form-label">Dirección</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" name="direccion" id="direccion"
-                                    placeholder="direccion" required oninvalid="setCustomValidity('Ingrese Dirección')"
-                                    oninput="setCustomValidity('')">
-                            </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="direccion" class="col-sm-2 col-form-label">Dirección</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="direccion" id="direccion"
+                                placeholder="direccion" required oninvalid="setCustomValidity('Ingrese Dirección')"
+                                oninput="setCustomValidity('')">
                         </div>
-                        <div class="form-group row">
-                            <label for="telefono1" class="col-sm-2 col-form-label">Teléfono </label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" name="telefono1" id="telefono1"
-                                    placeholder="telefono1" required onkeypress="return soloNumeros(event)"
-                                    maxlength="10" oninvalid="setCustomValidity('Ingrese número de Teléfono')"
-                                    oninput="setCustomValidity('')">
-                            </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="telefono1" class="col-sm-2 col-form-label">Teléfono </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="telefono1" id="telefono1"
+                                placeholder="telefono1" required onkeypress="return soloNumeros(event)" maxlength="10"
+                                oninvalid="setCustomValidity('Ingrese número de Teléfono')"
+                                oninput="setCustomValidity('')">
                         </div>
-                        <br>
-                        <hr><br>
-                        <h3 class="text-center h3 y-2">Escoja el producto</h3><br>
+                    </div>
+                    <br>
+                    <hr><br>
+                    <h3 class="text-center h3 y-2">Escoja el producto</h3><br>
 
-                        <!-- Producto -->
+                    <!-- Producto -->
 
-                        <table class="table text-center">
-                            <tr>
-                                <td><input type="text" name="nombrep1" value="Cumpleaños" disabled></td>
-                                <td><input type="checkbox" class="form-control" name="p1" id="p1" value="cumpleanos"></td>
+                    <table class="table text-center">
+                        <tr>
+                            <td><label for="p2" class="col-sm-2 col-form-label">Cumpleaños</label></td>
+                            <td><input type="checkbox" class="form-control" name="p1" id="p1" value="cumpleanos"
+                                    onclick="c1.disabled = false"></td>
 
-                            </tr>
-                            <tr>
-                                <td><img src="img/productos/5.jpg" alt="" width="150px"><br>
-                                    <p class="py-2 font-weight-bolder"><input type="number" name="preciop1" value="6.50" id="" disabled></p>
-                                </td>
-                                <td>
-                                    <label for="1" class="form-label">Cantidad</label><br>
-                                    <input class="form-control text-center" type="number" min="0" name="c1"
-                                        id="1">
-                                </td>
-                            </tr>
+                        </tr>
+                        <tr>
+                            <td><img src="img/productos/5.jpg" alt="" width="150px"><br>
+                                <p class="py-2 font-weight-bolder">$6.50</p>
+                            </td>
+                            <td>
+                                <label for="1" class="form-label">Cantidad</label><br>
+                                <input class="form-control text-center" type="number" min="0" name="c1" id="1" disabled>
+                            </td>
+                        </tr>
 
-                        </table>
+                    </table>
 
-                        <!-- Fin producto -->
-                        <!-- Producto -->
+                    <!-- Fin producto -->
+                    <!-- Producto -->
 
-                        <table class="table text-center">
-                            <tr>
-                                <td><label for="p2" class="col-sm-2 col-form-label">San Valentin</label></td>
-                                <td><input type="checkbox" class="form-control" name="p2" id="p2" value="san_valentin"></td>
+                    <table class="table text-center">
+                        <tr>
+                            <td><label for="p2" class="col-sm-2 col-form-label">San Valentin</label></td>
+                            <td><input type="checkbox" class="form-control" name="p2" id="p2"
+                                    onclick="c2.disabled = false" value="san_valentin"></td>
 
-                            </tr>
-                            <tr>
-                                <td><img src="img/productos/1.png" alt="" width="150px"><br>
-                                    <p class="py-2 font-weight-bolder">$7.75</p>
-                                </td>
-                                <td>
-                                    <label for="2" class="form-label">Cantidad</label><br>
-                                    <input class="form-control text-center" type="number" min="0" name="c2"
-                                        id="2">
-                                </td>
-                            </tr>
+                        </tr>
+                        <tr>
+                            <td><img src="img/productos/1.png" alt="" width="150px"><br>
+                                <p class="py-2 font-weight-bolder">$7.75</p>
+                            </td>
+                            <td>
+                                <label for="2" class="form-label">Cantidad</label><br>
+                                <input class="form-control text-center" type="number" min="0" name="c2" id="2" disabled>
+                            </td>
+                        </tr>
 
-                        </table>
+                    </table>
 
-                        
 
-                        <!-- Fin producto -->
-                        <!-- Producto -->
 
-                        <table class="table text-center">
-                            <tr>
-                                <td><label for="p3" class="col-sm-2 col-form-label">Arreglos Mixtos</label></td>
-                                <td><input type="checkbox" class="form-control" name="p3" id="p3" value="mixtos"></td>
+                    <!-- Fin producto -->
+                    <!-- Producto -->
 
-                            </tr>
-                            <tr>
-                                <td><img src="img/productos/2.png" alt="" width="150px"><br>
-                                    <p class="py-2 font-weight-bolder">$8.25</p>
-                                </td>
-                                <td>
-                                    <label for="3" class="form-label">Cantidad</label><br>
-                                    <input class="form-control text-center" type="number" min="0" name="c3"
-                                        id="3">
-                                </td>
-                            </tr>
+                    <table class="table text-center">
+                        <tr>
+                            <td><label for="p3" class="col-sm-2 col-form-label">Arreglos Mixtos</label></td>
+                            <td><input type="checkbox" class="form-control" name="p3" id="p3"
+                                    onclick="c3.disabled = false" value="mixtos"></td>
 
-                        </table>
+                        </tr>
+                        <tr>
+                            <td><img src="img/productos/2.png" alt="" width="150px"><br>
+                                <p class="py-2 font-weight-bolder">$8.25</p>
+                            </td>
+                            <td>
+                                <label for="3" class="form-label">Cantidad</label><br>
+                                <input class="form-control text-center" type="number" min="0" name="c3" id="3">
+                            </td>
+                        </tr>
 
-                        <!-- Fin producto -->
-                        <!-- Producto -->
+                    </table>
 
-                        <table class="table text-center">
-                            <tr>
-                                <td><label for="p4" class="col-sm-2 col-form-label">Bodas</label></td>
-                                <td><input type="checkbox" class="form-control" name="p4" id="p4" value="bodas"></td>
+                    <!-- Fin producto -->
+                    <!-- Producto -->
 
-                            </tr>
-                            <tr>
-                                <td><img src="img/productos/3.jpg" alt="" width="150px"><br>
-                                    <p class="py-2 font-weight-bolder">$15</p>
-                                </td>
-                                <td>
-                                    <label for="4" class="form-label">Cantidad</label><br>
-                                    <input class="form-control text-center" type="number" min="0" name="c4"
-                                        id="4">
-                                </td>
-                            </tr>
+                    <table class="table text-center">
+                        <tr>
+                            <td><label for="p4" class="col-sm-2 col-form-label">Bodas</label></td>
+                            <td><input type="checkbox" class="form-control" name="p4" id="p4"
+                                    onclick="c4.disabled = false" value="bodas"></td>
 
-                        </table>
+                        </tr>
+                        <tr>
+                            <td><img src="img/productos/3.jpg" alt="" width="150px"><br>
+                                <p class="py-2 font-weight-bolder">$15</p>
+                            </td>
+                            <td>
+                                <label for="4" class="form-label">Cantidad</label><br>
+                                <input class="form-control text-center" type="number" min="0" name="c4" id="4" disabled>
+                            </td>
+                        </tr>
 
-                        <!-- Fin producto -->
-                        <!-- Producto -->
+                    </table>
 
-                        <table class="table text-center">
-                            <tr>
-                                <td><label for="p5" class="col-sm-2 col-form-label">Reuniones</label></td>
-                                <td><input type="checkbox" class="form-control" name="p5" id="p5" value="reuniones"></td>
+                    <!-- Fin producto -->
+                    <!-- Producto -->
 
-                            </tr>
-                            <tr>
-                                <td><img src="img/productos/6.jpeg" alt="" width="150px"><br>
-                                    <p class="py-2 font-weight-bolder">$7</p>
-                                </td>
-                                <td>
-                                    <label for="5" class="form-label">Cantidad</label><br>
-                                    <input class="form-control text-center" type="number" min="0" name="c5"
-                                        id="5">
-                                </td>
-                            </tr>
+                    <table class="table text-center">
+                        <tr>
+                            <td><label for="p5" class="col-sm-2 col-form-label">Reuniones</label></td>
+                            <td><input type="checkbox" class="form-control" name="p5" id="p5"
+                                    onclick="c5.disabled = false" value="reuniones"></td>
 
-                        </table>
+                        </tr>
+                        <tr>
+                            <td><img src="img/productos/6.jpeg" alt="" width="150px"><br>
+                                <p class="py-2 font-weight-bolder">$7</p>
+                            </td>
+                            <td>
+                                <label for="5" class="form-label">Cantidad</label><br>
+                                <input class="form-control text-center" type="number" min="0" name="c5" id="5" disabled>
+                            </td>
+                        </tr>
 
-                        <!-- Fin producto -->
-                        <!-- Producto -->
+                    </table>
 
-                        <table class="table text-center">
-                            <tr>
-                                <td><label for="p6" class="col-sm-2 col-form-label">Personalizados</label></td>
-                                <td><input type="checkbox" class="form-control" name="p6" id="p6" value="personalizados"></td>
+                    <!-- Fin producto -->
+                    <!-- Producto -->
 
-                            </tr>
-                            <tr>
-                                <td><img src="img/productos/7.jpg" alt="" width="150px"><br>
-                                    <p class="py-2 font-weight-bolder">$8</p>
-                                </td>
-                                <td>
-                                    <label for="6" class="form-label">Cantidad</label><br>
-                                    <input class="form-control text-center" type="number" min="0" name="c6"
-                                        id="6">
-                                </td>
-                            </tr>
+                    <table class="table text-center">
+                        <tr>
+                            <td><label for="p6" class="col-sm-2 col-form-label">Personalizados</label></td>
+                            <td><input type="checkbox" class="form-control" name="p6" id="p6"
+                                    onclick="c6.disabled = false" value="personalizados"></td>
 
-                        </table>
+                        </tr>
+                        <tr>
+                            <td><img src="img/productos/7.jpg" alt="" width="150px"><br>
+                                <p class="py-2 font-weight-bolder">$8</p>
+                            </td>
+                            <td>
+                                <label for="6" class="form-label">Cantidad</label><br>
+                                <input class="form-control text-center" type="number" min="0" name="c6" id="6" disabled>
+                            </td>
+                        </tr>
 
-                        <!-- Fin producto -->
-                        <!-- Producto -->
+                    </table>
 
-                        <table class="table text-center">
-                            <tr>
-                                <td><label for="p7" class="col-sm-2 col-form-label">Baby shower</label></td>
-                                <td><input type="checkbox" class="form-control" name="p7" id="p7" value="baby_shower"></td>
+                    <!-- Fin producto -->
+                    <!-- Producto -->
 
-                            </tr>
-                            <tr>
-                                <td><img src="img/productos/5.jpg" alt="" width="150px"><br>
-                                    <p class="py-2 font-weight-bolder">$12.50</p>
-                                </td>
-                                <td>
-                                    <label for="7" class="form-label">Cantidad</label><br>
-                                    <input class="form-control text-center" type="number" min="0" name="c7"
-                                        id="7">
-                                </td>
-                            </tr>
+                    <table class="table text-center">
+                        <tr>
+                            <td><label for="p7" class="col-sm-2 col-form-label">Baby shower</label></td>
+                            <td><input type="checkbox" class="form-control" name="p7" id="p7"
+                                    onclick="c7.disabled = false" value="baby_shower"></td>
 
-                        </table>
+                        </tr>
+                        <tr>
+                            <td><img src="img/productos/5.jpg" alt="" width="150px"><br>
+                                <p class="py-2 font-weight-bolder">$12.50</p>
+                            </td>
+                            <td>
+                                <label for="7" class="form-label">Cantidad</label><br>
+                                <input class="form-control text-center" type="number" min="0" name="c7" id="7" disabled>
+                            </td>
+                        </tr>
 
-                        <!-- Fin producto -->
-                        
+                    </table>
 
-                        <br>
-                        <hr><br>
-                        <h3 class="text-center h3 y-2">Entrega</h3><br>
-                        <div class="form-group row">
-                            <label for="tentrega" class="col-sm-4 col-form-label">Tipo de entrega</label>
-                            <div class="col-sm-8">
-                                <select name="tipoEntrega" id="Tentrega" class="form-control">
-                                    <option value="Domicilio">Domicilio</option>
-                                    <option value="Local">Local</option>
-                                </select>
-                            </div>
+                    <!-- Fin producto -->
+
+
+                    <br>
+                    <hr><br>
+                    <h3 class="text-center h3 y-2">Entrega</h3><br>
+                    <div class="form-group row">
+                        <label for="tentrega" class="col-sm-4 col-form-label">Tipo de entrega</label>
+                        <div class="col-sm-8">
+                            <select name="tipoEntrega" id="Tentrega" class="form-control">
+                                <option value="Domicilio">Domicilio</option>
+                                <option value="Local">Local</option>
+                            </select>
                         </div>
-                        <div class="form-group row">
-                            <label for="entrega" class="col-sm-4 col-form-label">Fecha de entrega</label>
-                            <div class="col-sm-8">
-                                <input type="date" name="fechaEntrega" id="" class="form-control">
-                            </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="entrega" class="col-sm-4 col-form-label">Fecha de entrega</label>
+                        <div class="col-sm-8">
+                            <input type="date" name="fechaEntrega" id="" class="form-control">
                         </div>
-                        <div class="form-group row">
-                            <label for="observaciones" class="col-sm-4 col-form-label">Observaciones</label>
-                            <div class="col-sm-8">
-                                <textarea name="observaciones" id="observaciones" cols="60" rows="10" class="form-control"></textarea>
-                            </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="observaciones" class="col-sm-4 col-form-label">Observaciones</label>
+                        <div class="col-sm-8">
+                            <textarea name="observaciones" id="observaciones" cols="60" rows="10"
+                                class="form-control"></textarea>
                         </div>
-                        <div class="form-group row">
-                            <input type="submit" value="Generar Factura" class="btn-success p-2"
-                                style="margin: 0 auto;">
-                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <input type="submit" value="Generar Factura" class="btn-success p-2" style="margin: 0 auto;">
+                    </div>
                 </div>
             </div>
         </div>
