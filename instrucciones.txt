@@ -1,0 +1,23 @@
+Bienvenido al proyecto final de Administracion de Sistemas Operativos
+
+Para ejecutar el proyecto realiza lo siguiente:
+
+1. Descargar proyecto de la siguiente URL:
+https://github.com/ASAA19971a/ProyectoPerl
+
+2.Descomprimir el proyecto
+
+3.Abrir la carpeta cgi-bin del archivo descomprimido
+
+4.Copiar la carpeta Proyecto_Final en la carpeta cgi-bin de tu servidor Xampp
+C:\xampp\cgi-bin
+
+5.Abrir la carpeta htdocs del archivo descomprimido
+
+6.Copiar la carpeta Proyecto_Perl en la carpeta htdocs de tu servidor Xampp
+C:\xampp\htdocs
+
+7. Levantar el servidor Apache
+
+8. En un navegador de tu preferencia escribir la sigueinte url:
+localhost/Proyecto_Perl/login.html
